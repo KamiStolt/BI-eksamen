@@ -69,7 +69,7 @@ def visualize_selected_histograms(df):
 
 
 if section == "Histograms":
-    st.header("Historgrams")
+    st.header("Histograms")
     st.write("This section presents histograms that help us understand the distribution of the data and identify any potential outliers or skewness.")
     st.write("") 
 
