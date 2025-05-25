@@ -11,8 +11,9 @@ st.set_page_config(page_title="COVID-19 Analysis", layout="wide")
 menu = st.sidebar.radio("Vælg sektion", ["Introduktion", "Data", "Analyse", "Verdenskort", "HDI", "Konklusion"])
 
 # Indlæs data
-df = pd.read_csv("owid-covid-latest.csv")
-hdi = pd.read_csv("human-development-index.csv", sep=";") 
+df_covid = pd.read_csv("df_covid_cleaned.csv")
+df_age = pd.read_csv("df_age_cleaned.csv")
+df_health = pd.read_csv("df_health_cleaned.csv")
 
 # INTRODUKTION
 if menu == "Introduktion":
@@ -22,14 +23,6 @@ if menu == "Introduktion":
     Our goal is to uncover patterns that can help identify high-risk populations and support better planning for future pandemics. Behind the data are real people, and by understanding what drives the outcomes, we hope to inform smarter and more compassionate public health decisions.
     """)
 
-# DATA
-elif menu == "Data":
-    st.title("Datasæt")
-    st.subheader("COVID-19 Data")
-    st.write(df[['location', 'population', 'total_cases', 'total_deaths', 'diabetes_prevalence']].dropna().head())
-
-    st.subheader("Human Development Index (HDI)")
-    st.write(hdi.head())
 
 # ANALYSE
 elif menu == "Analyse":
@@ -60,7 +53,7 @@ elif menu == "Analyse":
 elif menu == "Verdenskort":
     st.title("COVID-19 Dødsfald – Verdenskort")
 
-    df_map = df[['location', 'total_deaths']].dropna()
+    df_map = df_covid[['location', 'total_deaths']].dropna()
     df_map = df_map[df_map['location'] != 'World']
     df_map.rename(columns={"location": "country"}, inplace=True)
 
