@@ -19,7 +19,8 @@ df_health = pd.read_csv("df_health_cleaned.csv")
 if menu == "Introduktion":
     st.title(" Explaining COVID-19 Death Rates Across Countries: The Role of Demographics, Health, and Development")
     st.write("""
-    I dette projekt undersøger vi, om sundhedsfaktorer (som diabetes og HDI) har en sammenhæng med COVID-19-smittetal og dødsfald.
+    This project explores why some countries were hit harder by COVID-19 than others. We examine key factors such as population size, age distribution, health conditions, and the Human Development Index (HDI) to see how they relate to death rates — both total and per capita.
+    Our goal is to uncover patterns that can help identify high-risk populations and support better planning for future pandemics. Behind the data are real people, and by understanding what drives the outcomes, we hope to inform smarter and more compassionate public health decisions.
     """)
 
 
