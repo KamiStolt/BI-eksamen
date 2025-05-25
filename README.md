@@ -10,6 +10,7 @@
 ---
 
 **Motivation**
+
 The COVID-19 pandemic affected countries differently, and this sparked our curiosity: why did some nations experience far higher death rates than others? Was it just about wealth and healthcare, or also about deeper factors like age, population size, and health conditions?
 
 We chose this topic because it combines data with real human impact. Our goal was to understand what contributed to the differences in death tolls, so we can help inform better protection for vulnerable groups in future pandemics.
@@ -19,6 +20,7 @@ This project allowed us to use our analytical skills to explore something meanin
 ---
 
 **Problem Statement**
+
 What key demographic, health-related, and socio-economic factors best explain the variation in COVID-19 death rates across countries? 
 
 Specifically, how do variables such as population size, age distribution, existing health conditions and the Human Development Index (HDI) contribute to differences in total and per capita COVID-19 deaths?  
@@ -26,11 +28,13 @@ Specifically, how do variables such as population size, age distribution, existi
 ---
 
 **Purpose**
+
 The goal of this project is to identify key factors that help explain why some countries experienced higher COVID-19 death rates than others. By analyzing variables like age, population size, existing health conditions, and socio-economic development, we aim to highlight patterns that could support better protection of high-risk populations and improve planning for future pandemics.
 
 ---
 
 **Hypotheses**
+
 1. Higher population size is associated with higher total COVID-19 deaths, but not necessarily with higher deaths per capita. 
 
 2. Countries with a higher Human Development Index (HDI) have experienced lower COVID-19 death rates per capita. 
@@ -42,6 +46,7 @@ The goal of this project is to identify key factors that help explain why some c
 ---
 
 **A brief annotation of our project, explaining:** 
+
 - which challenge you would like to address? 
 - why is this challenge important or interesting research goal? 
 - what is the expected solution your project would provide? 
