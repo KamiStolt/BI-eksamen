@@ -67,9 +67,12 @@ Navigate to the Streamlit Folder In VSCode, open a terminal and make sure you're
 Install Required Packages In the terminal, run the following command to install all necessary packages:
 
 pip install streamlit
+pip install plotly
+pip install scikit-learn
+pip install matplotlib
 
 Once dependencies are installed, launch the app with:
 
-streamlit run pages/main.py
+streamlit run app.py
 
-This will open a local Streamlit web app in your browser. You can also run these commands in any other terminal (e.g. Windows Terminal, macOS Terminal) as long as your Python environment is activated.
+This will open a local Streamlit web app in your browser.
