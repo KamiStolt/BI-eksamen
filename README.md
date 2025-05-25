@@ -1,54 +1,70 @@
 # BI-eksamen
-group 7 - Juvena, Jeanette og Kamilla
+## **Title of the project:** Explaining COVID-19 Death Rates Across Countries: The Role of Demographics, Health, and Development
 
-Problem Statement
-Which country had the lowest COVID-19 death toll, and what factors such as age, welfare, healthcare, and population structure can help explain the differences in death rates between countries?
+---
 
-Purpose
-The COVID-19 pandemic impacted countries in very different ways, with significant variation in death tolls. In this project, we aim to identify the country with the lowest death toll and compare it to other countries to investigate which factors such as age, welfare, and healthcare may have contributed to the differences in outcomes.
+**Course:** Business Intelligence 
+**Group:** Group 7
+**Group Members:** Kamilla, Juvena og Jeanette
 
+---
 
-Hypotheses 
+**Motivation**
+The COVID-19 pandemic affected countries differently, and this sparked our curiosity: why did some nations experience far higher death rates than others? Was it just about wealth and healthcare, or also about deeper factors like age, population size, and health conditions?
 
-1. Factors such as population size, society, and welfare systems play a role in the COVID-19 death rate between two very similar countries.
+We chose this topic because it combines data with real human impact. Our goal was to understand what contributed to the differences in death tolls, so we can help inform better protection for vulnerable groups in future pandemics.
 
-2. The Nordic countries had higher survival rates during COVID-19 compared to other countries.
+This project allowed us to use our analytical skills to explore something meaningful, reminding us that behind every number is a life.
 
-3. Age and gender has a major impact on the survival rate during COVID-19. 
+---
 
-4. A strong healthcare system has a positive effect on the COVID-19 death rate.
+**Problem Statement**
+What key demographic, health-related, and socio-economic factors best explain the variation in COVID-19 death rates across countries? 
 
-5. What kind of impact does the Covid-19 have on our immune system now? 
+Specifically, how do variables such as population size, age distribution, existing health conditions and the Human Development Index (HDI) contribute to differences in total and per capita COVID-19 deaths?  
 
+---
 
+**Purpose**
+The goal of this project is to identify key factors that help explain why some countries experienced higher COVID-19 death rates than others. By analyzing variables like age, population size, existing health conditions, and socio-economic development, we aim to highlight patterns that could support better protection of high-risk populations and improve planning for future pandemics.
 
-Which challenge you would like to address?
-We aim to analyze COVID-19-related death rates in order to identify the most influential factors contributing to mortality during the pandemic. Based on these insights, we seek to predict which precautions or interventions could be most effective in the event of a future epidemic.
+---
 
+**Hypotheses**
+1. Higher population size is associated with higher total COVID-19 deaths, but not necessarily with higher deaths per capita. 
 
-Why is this challenge important or interesting research goal?
-A deeper understanding of the key factors that significantly influenced COVID-19 death rates can provide valuable insights for public health authorities and policymakers. By identifying these critical drivers, governments can better prepare for and respond to future pandemics or public health emergencies, potentially saving lives and optimizing resource allocation.
+2. Countries with a higher Human Development Index (HDI) have experienced lower COVID-19 death rates per capita. 
 
+3. Countries with a higher life expectancy and older populations (e.g. higher median age, % aged 65+, etc.) have experienced higher COVID-19 death rates.
 
-What is the expected solution your project would provide?
-We expect to present the progression of the COVID-19 pandemic through relevant visualizations and an interactive web application that enables users to explore and understand the underlying data.
+4. Countries with higher prevalence of chronic health conditions (e.g. cardiovascular death rate, diabetes, smoking) have higher COVID-19 death rates
 
+---
 
-What would be the positive impact of the solution, which category of users could benefit from it?
-While the solution may benefit a broad audience, our primary focus is on delivering actionable insights to public health authorities and policymakers. By providing them with clear, data-driven overviews, we aim to support more informed decisions in managing future health crises.
+**A brief annotation of our project, explaining:** 
+- which challenge you would like to address? 
+- why is this challenge important or interesting research goal? 
+- what is the expected solution your project would provide? 
+- what would be the positive impact of the solution, which category of users could benefit from it? 
 
-3. Prepare the development environment
-give a title to your project
-Analyzing Global COVID-19 Death Rates and the Contributing Factors 
-or 
-Identifying Key Factors Influencing COVID-19 Death Rates 
+We aim to investigate which demographic, health-related, and socio-economic factors best explain differences in COVID-19 death rates across countries. This is important to understand why some countries were more affected than others and to improve future pandemic preparedness. By analyzing factors like population size, age, health conditions, and HDI, we hope to identify key patterns. The findings could help governments and health organizations protect vulnerable populations and plan better responses.
 
-plan and organise the execution of the individual tasks in terms of time, milestones, deliverables, team members engagement
- We will do our best throughout the project, but we understand that life outside the project will affect how much we can contribute.
-We will use collaborative programming (taking turns sharing screens) and divide individual tasks.
-All three of us are also working on our System Development exam project at the same time.
-Additionally, all group members have children, which requires flexibility and understanding.
-We will primarily focus on the BI exam project on Mondays and Thursdays.
+---
 
+**Running the Streamlit App**
 
+To run the Streamlit dashboard locally, follow these steps:
 
+Open Anaconda Navigator Launch Anaconda and open VSCode from within Anaconda.
+
+Navigate to the Streamlit Folder In VSCode, open a terminal and make sure you're in the Streamlit directory of the project.
+
+Install Required Packages In the terminal, run the following command to install all necessary packages:
+
+pip install streamlit
+
+Once dependencies are installed, launch the app with:
+
+streamlit run pages/main.py
+
+This will open a local Streamlit web app in your browser. You can also run these commands in any other terminal (e.g. Windows Terminal, macOS Terminal) as long as your Python environment is activated.
