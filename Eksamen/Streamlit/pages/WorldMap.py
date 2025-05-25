@@ -16,8 +16,8 @@ except Exception as e:
 
 
 # VERDENSKORT
-menu = "Verdenskort"
-st.title("COVID-19 Dødsfald – Verdenskort")
+menu = "Worldmap"
+st.title("COVID-19 Deaths – worldmap")
 
 df_map = df_covid[['location', 'total_deaths']].dropna()
 df_map = df_map[df_map['location'] != 'World']
@@ -29,7 +29,7 @@ fig = px.choropleth(
         locationmode="country names",
         color="total_deaths",
         color_continuous_scale="Reds",
-        title="Totale COVID-19 Dødsfald pr. Land"
+        title="Totale COVID-19 Deaths pr. Country"
     )
 
 fig.update_layout(geo=dict(showframe=False, showcoastlines=False))
