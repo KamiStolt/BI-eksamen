@@ -6,11 +6,19 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score  
 
 
+# Load datasets
+try:
+    df_covid = pd.read_csv("df_covid_cleaned.csv")
+    st.success("Datasets successfully loaded!")
+except Exception as e:
+    st.error(f"Error loading data: {e}")
+    st.stop()
+
 
 # ANALYSE
 menu = "Analyse"
-st.title("Analyse: Population vs. Total Cases")df_selected = df[['population', 'total_cases']].dropna()
-
+st.title("Analyse: Population vs. Total Cases")
+df_selected = df_covid[['population', 'total_cases']].dropna()
 X = df_selected[['population']]
 y = df_selected['total_cases']
 
