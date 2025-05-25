@@ -20,7 +20,7 @@ This project explores why some countries were hit harder by COVID-19 than others
 Our goal is to uncover patterns that can help identify high-risk populations and support better planning for future pandemics. Behind the data are real people, and by understanding what drives the outcomes, we hope to inform smarter and more compassionate public health decisions.
 """)
 st.write("""
-Made by: Juvena, Kamilla og Jeanette 
+Made by: Juvena, Kamilla and Jeanette 
 """)
 
 
