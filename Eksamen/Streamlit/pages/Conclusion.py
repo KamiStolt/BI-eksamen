@@ -6,8 +6,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score    
 
 # KONKLUSION
-menu = "Konklusion"
-st.title("Konklusion")
+menu = "Conclusion"
+st.title("Conclusion")
 st.write("""
    This study explored why COVID-19 death rates varied across countries by analyzing demographic, socio-economic, and health-related factors. The goal was not to predict outcomes, but to uncover patterns that explain global differences in mortality.
 
