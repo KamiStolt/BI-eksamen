@@ -7,7 +7,6 @@ from sklearn.metrics import r2_score
 
 # st.set_page_config(page_title="COVID-19 Analysis", layout="wide")
 
-
 # Indlæs data
 df_covid = pd.read_csv("df_covid_cleaned.csv")
 df_age = pd.read_csv("df_age_cleaned.csv")
@@ -21,7 +20,7 @@ This project explores why some countries were hit harder by COVID-19 than others
 Our goal is to uncover patterns that can help identify high-risk populations and support better planning for future pandemics. Behind the data are real people, and by understanding what drives the outcomes, we hope to inform smarter and more compassionate public health decisions.
 """)
 st.write("""
-Made by: Juvena, Kamilla og Jeanette 
+Made by: Juvena, Kamilla and Jeanette 
 """)
 
 
