@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f190ea58-b139-484d-b93d-c0a77f1acc35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eksamen/.ipynb_checkpoints/BI_exam-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eksamen/Data/DecisionTree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eksamen/Data/age" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eksamen/Data/age.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eksamen/BI_exam.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Eksamen/BI_exam.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eksamen/Data/HDR25_Statistical_Annex_HDI_Table.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,18 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Jeanette93Cph"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jeanette93Cph&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KamiStolt/BI-eksamen.git",
-    "accountId": "d9c5f89d-bbd8-4173-9eaf-85457a2ad191"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KamiStolt/BI-eksamen.git&quot;,
+    &quot;accountId&quot;: &quot;d9c5f89d-bbd8-4173-9eaf-85457a2ad191&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -43,7 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging jeanette",
+    "git-widget-placeholder": "jeanette",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
