@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score
 st.set_page_config(page_title="COVID-19 Analysis", layout="wide")
 
 # Sidebar navigation
-menu = st.sidebar.radio("Vælg sektion", ["Introduktion", "Data", "Analyse", "Verdenskort", "HDI", "Konklusion"])
+menu = st.sidebar.radio("Vælg sektion", ["Introduktion", "Data", "Analyse", "Verdenskort", "HDI", "Konklusion", "Test"])
 
 # Indlæs data
 df = pd.read_csv("owid-covid-latest.csv")
@@ -108,3 +108,7 @@ Health-related factors such as smoking and chronic conditions showed only weak c
 
 In summary, the variation in COVID-19 death rates is best explained by demographic structure, especially aging populations. However, outcomes were also shaped by healthcare capacity, public health interventions, and reporting accuracy. For future pandemics, countries must focus on protecting vulnerable age groups and strengthening health systems, rather than relying solely on general development indicators like HDI.
     """)
+
+def show_test_page():
+    st.title("Testsiden")
+    st.write("Denne side virker nu! ✅")
