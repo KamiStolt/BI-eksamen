@@ -10,7 +10,7 @@ menu = st.sidebar.radio("Vælg sektion", ["Introduktion", "Data", "Analyse", "Ve
 
 # Indlæs data
 df = pd.read_csv("owid-covid-latest.csv")
-hdi = pd.read_csv("human-development-index.csv", sep=";")  # brug evt sep="," hvis nødvendigt
+hdi = pd.read_csv("human-development-index.csv", sep=";") 
 
 # INTRODUKTION
 if menu == "Introduktion":
