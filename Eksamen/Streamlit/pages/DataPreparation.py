@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 # Page setup
-st.set_page_config(page_title="Data Preparation", page_icon="🧹", layout="wide")
+st.set_page_config(page_title="Data Preparation", page_icon="🧹")
 st.title("🧹 Data Preparation")
 st.write("This page describes the cleaning and preprocessing steps applied to our COVID-19 dataset.")
 
