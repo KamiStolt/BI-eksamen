@@ -5,7 +5,7 @@ import plotly.express as px
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-st.set_page_config(page_title="COVID-19 Analysis", layout="wide")
+# st.set_page_config(page_title="COVID-19 Analysis", layout="wide")
 
 
 # Indlæs data
