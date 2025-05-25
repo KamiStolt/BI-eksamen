@@ -4,7 +4,9 @@
 ---
 
 **Course:** Business Intelligence 
+
 **Group:** Group 7
+
 **Group Members:** Kamilla, Juvena og Jeanette
 
 ---
