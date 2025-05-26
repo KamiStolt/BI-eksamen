@@ -79,22 +79,23 @@ if section == "Histograms":
     st.write("The above histograms show the distribution of key variables. Most are right-skewed, especially age-related factors and total deaths per million, while life expectancy appears more normally distributed ") 
 
 
+
 elif section == "Box Plots":
     st.header("Box Plots")
     st.write("This section presents box plots that visualize the distribution and highlight potential outliers in COVID-19 death rates and related variables across countries.")
     st.write("") 
 
-
     # Total deaths pr milion from hypothesis 1
-    df_covid.boxplot(column='total_deaths_per_million')
+    df_covid.boxplot(column='total_deaths_per_million', patch_artist=True, boxprops=dict(facecolor='lightgreen'))
     plt.title('Outliers in total deaths pr million')
     st.pyplot(plt)
     st.write("""The box plot above shows the distribution of total deaths per million across countries. The outliers indicate a few countries with moderately higher death rates.""")
     st.write("")  
     st.write("") 
+    st.write("") 
 
     # Total deathsfrom hypothesis 1
-    df_covid.boxplot(column='total_deaths') 
+    df_covid.boxplot(column='total_deaths', patch_artist=True, boxprops=dict(facecolor='lightgreen')) 
     plt.title('Outliers in total deaths')
     st.pyplot(plt)
     st.write("""The box plot above shows the distribution of total deaths across countries. The outliers indicate many extreme values, likely from large countries with high populations.""")
@@ -106,12 +107,20 @@ elif section == "Scatter Plots":
     st.write("This section presents scatter plots that explore the relationships between key variables and COVID-19 death rates, helping to identify possible trends or correlations across countries.")
     st.write("")  
 
+    # Visualise the features and the response using scatterplots from hypothesis 2
+    plt.title('Human Development Index vs Total Deaths per Million')
+    sns.scatterplot(data=df_covid, x='human_development_index', y='total_deaths_per_million', color='green')
+    st.pyplot(plt)
+    st.write("This scatterplot above shows a moderate positive relationship between HDI and COVID-19 death rates per million, suggesting that countries with higher HDI tend to report more deaths — but also that HDI alone does not fully explain the variation.")
+    st.write("")  
+    st.write("") 
+    st.write("") 
 
     # Visualise the features and the response using scatterplots from hypothesis 3
-    sns.pairplot(df_age, x_vars=['life_expectancy', 'median_age', 'aged_65_older'], y_vars='total_deaths_per_million', height=5, aspect=1)
+    sns.pairplot(df_age, x_vars=['life_expectancy', 'median_age', 'aged_65_older'], y_vars='total_deaths_per_million', height=5, aspect=1, plot_kws={'color': 'green'})
     plt.title('Scatterplot')
     st.pyplot(plt)
-    st.write("""These scatter plots reveal positive relationships between age-related variables and COVID-19 death rates, indicating that older populations tend to experience higher death rates per million.""")
+    st.write("""These scatter plots above reveal positive relationships between age-related variables and COVID-19 death rates, indicating that older populations tend to experience higher death rates per million.""")
 
 
 
@@ -127,6 +136,7 @@ elif section == "Correlation Matrix":
     st.write("The matrix above shows a moderate positive correlation (0.47) between HDI and COVID-19 deaths per million — contrary to expectations. This suggests HDI alone doesn’t explain the variation in death rates.") 
     st.write("")  
     st.write("")  
+    st.write("") 
 
     # Correlation matrix from hypothesis 1
     corr_df = df_covid[['population', 'total_deaths', 'total_deaths_per_million']]
